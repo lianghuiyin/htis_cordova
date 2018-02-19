@@ -1,0 +1,7 @@
+**/.npm/*
+**/.DS_Store/*
+**/dist/*
+
+.build
+.DS_Store
+platforms

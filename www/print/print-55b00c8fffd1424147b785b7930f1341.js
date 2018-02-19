@@ -1,0 +1,1 @@
+$(function(){var t=window.opener.$(".print-content").clone().find(".hidden-print").remove().end();$(".print-title").after(t.prop("outerHTML")),document.title=t.find(".panel-title").text()+"--"+document.title});
