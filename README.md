@@ -24,33 +24,33 @@ draw9patch
 
 —生成密钥
 
-YinLiangHuideMacBook-Air:keystore yinlianghui$ keytool -genkey -v -keyalg DSA -keysize 1024 -sigalg SHA1withDSA  -validity 20000  -keystore horizon.keystore -alias horizon   -keypass Horizon2003 -storepass Horizon2003
+YinLiangHuideMacBook-Air:keystore yinlianghui$ keytool -genkey -v -keyalg DSA -keysize 1024 -sigalg SHA1withDSA  -validity 20000  -keystore horizon.keystore -alias horizon   -keypass pwd -storepass pwd
 
 您的名字与姓氏是什么?
 
-  [Unknown]:  Lit_Yin
+  [Unknown]:  xxx
 
 您的组织单位名称是什么?
 
-  [Unknown]:  Horizon
+  [Unknown]:  xxx
 
 您的组织名称是什么?
 
-  [Unknown]:  Horizon
+  [Unknown]:  xxx
 
 您所在的城市或区域名称是什么?
 
-  [Unknown]:  上海
+  [Unknown]:  xx
 
 您所在的省/市/自治区名称是什么?
 
-  [Unknown]:  上海
+  [Unknown]:  xx
 
 该单位的双字母国家/地区代码是什么?
 
   [Unknown]:  zh
 
-CN=Lit_Yin, OU=Horizon, O=Horizon, L=上海, ST=上海, C=zh是否正确?
+CN=xx, OU=xx, O=xx, L=xx, ST=xx, C=xx是否正确?
 
   [否]:  Y
 
@@ -58,7 +58,7 @@ CN=Lit_Yin, OU=Horizon, O=Horizon, L=上海, ST=上海, C=zh是否正确?
 
 正在为以下对象生成 1,024 位DSA密钥对和自签名证书 (SHA1withDSA) (有效期为 20,000 天):
 
-CN=Lit_Yin, OU=Horizon, O=Horizon, L=上海, ST=上海, C=zh
+CN=xx, OU=xx, O=xx, L=xx, ST=xx, C=xx
 
 [正在存储horizon.keystore]
 
@@ -72,7 +72,7 @@ YinLiangHuideMacBook-Air:htis yinlianghui$ cordova build android --release
 YinLiangHuideMacBook-Air:htis yinlianghui$ cp platforms/android/build/outputs/apk/android-release-unsigned.apk dist/htis.apk
 
 —签名
-YinLiangHuideMacBook-Air:htis yinlianghui$ jarsigner  -verbose -sigalg SHA1withDSA -digestalg SHA1  -keystore dist/horizon.keystore -storepass Horizon2003 dist/htis.apk horizon
+YinLiangHuideMacBook-Air:htis yinlianghui$ jarsigner  -verbose -sigalg SHA1withDSA -digestalg SHA1  -keystore dist/horizon.keystore -storepass pwd dist/htis.apk horizon
 
 —验证签名
 YinLiangHuideMacBook-Air:htis yinlianghui$ jarsigner -verbose -verify  dist/htis.apk
